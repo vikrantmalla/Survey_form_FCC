@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FreeCodeCamp</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand"><span>Free</span> CodeCamp <span><img class="logo" src="../image/fcc.svg" /></span> </h1>
+        <div class="wrapper animated bounceInLeft">
+            <div class="info">
+                <h1 id="title">FreeCodeCamp Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </div>
+            <div class="survey-form">
+                <h3>Survey Form</h3>
+                <form id="survey-form">
+                    <p>
+                        <label id="name-label">Name</label>
+                        <input type="text" id="name" placeholder="Enter your Name" required />
+                    </p>
+                    <p>
+                        <label id="email-label">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your Email" required />
+                    </p>
+                    <p>
+                        <label id="age-label">Age<span class="hint">(Option)</span></label>
+                        <input type="number" id="number" placeholder="Enter yous Age" min="10" max="99" required />
+                    </p>
+
+                    <p>
+                        <label id="number-label">Phone Number</label>
+                        <input type="number" id="phone-number" placeholder="Enter your Number" required />
+                    </p>
+                    <p class="full">
+                        <label>Would you recommend freeCodeCamp to a friend?<span class="hint">(Check all that
+                                apply)</span></label>
+
+                        <label for="definitely"><input type="radio" name="recommend" id="definitely"
+                                value="definitely" />
+                            Definitely</label>
+                        <label for="maybe"><input type="radio" name="recommend" id="maybe" value="maybe" />
+                            Maybe</label>
+                        <label for="not sure"><input type="radio" name="recommend" id="not sure" value="not sure" /> Not
+                            sure</label>
+                    </p>
+                    </p>
+                    <p class="full">
+                        <label for="role">Which option best describes your current role?</label>
+                        <select id="dropdown" name="role">
+                            <option disabled selected value>Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="fulltime">FullTime</option>
+                            <option value="parttime">PartTime</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p class="full">
+                        <label>What would you like to see improved?<span class="hint">(Check all that
+                                apply)</span></label>
+
+                        <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1" />
+                            Front-end
+                            Project</label>
+                        <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2" />
+                            Back-end
+                            Project</label>
+                        <label for="improve-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3" />
+                            Data
+                            Visualization</label>
+                        <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4" />
+                            Challenges</label>
+                        <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5" />
+                            Additional
+                            Courses</label>
+
+                    </p>
+
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                    </p>
+                    <p class="full">
+                        <button id="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
